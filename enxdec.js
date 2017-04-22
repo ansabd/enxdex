@@ -4,7 +4,7 @@ Created by Ansari Abdullah,
 Date of Creation: April 22, 2017 (11:10),
 Version: v1.0
 */
-var encode = function(text) {
+var xencode = function(text) {
 	this.text = text;
 	var bin = [];
 	var encoded = '';
@@ -37,7 +37,7 @@ var encode = function(text) {
 	var d = new Date().getTime();
 	return encoded+'|'+timeEnc(d.toString());
 };
-var decode = function(val) {
+var xdecode = function(val) {
 	val = val.split('|');
 	var text = val[0];
 	var encTime = val[1];
