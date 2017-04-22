@@ -13,10 +13,10 @@ Usage:
 	<font id="enc"></font><br><br>
 	<font id="dec"></font>
 	<script>
-		function encodeThis(val) {
+		function xencodeThis(val) {
 			document.getElementById('enc').innerHTML=encode(val);
 		}
-		function decodeThis(val) {
+		function xdecodeThis(val) {
 			var dec = document.getElementById('dec');
 			var ret = decode(val);
 			dec.innerHTML = 'Value: '+ret.value+'<br><br>';
@@ -27,6 +27,6 @@ Usage:
 ```
 Enjoy the new algorithm of Encryptionm, and this is OpenSource,
 if you find any mistake, error, or any other feedback feel free to tell me.
-
+Warnng: This can encode text without containing spaces, else you won't decode it back again.
 I'm waiting for your feedback, means anyone can tell me idea for adding any other features.
 3nj0y (0d!nG !!!
