@@ -15,7 +15,7 @@ ENXDEC
 
 ** Usage: **
 
-`<script src='enxdec.js'></script>
+	`<script src='enxdec.js'></script>
 	<input id="inp" value="ansabd"><br>
 	<button onclick="encodeThis(document.getElementById('inp').value)">Encode</button>
 	<button onclick="decodeThis(document.getElementById('inp').value)">Decode</button>
