@@ -36,10 +36,9 @@ ENXDEC
 	</script>`
 	
 ## Notice:
-**When you decode the text you will get return type, 'Object', so don't worry, it's pretty simple
+** When you decode the text you will get return type, 'Object', so don't worry, it's pretty simple
 let's assume, 
-	`var dec = xdecode('---------');
+	 var dec = xdecode('---------');
 	 var retrn = dec.value; //For getting decoded text
-	 var toe = dec.time; //For getting when the text was encoded`
-Is'nt it pretty simple!!
-		
+	 var toe = dec.time; //For getting when the text was encoded
+Is'nt it pretty simple!! **
