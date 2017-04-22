@@ -2,7 +2,7 @@
 
 ## This is ever first encryption I have made by using my little 10g of brain, and combining it with JavaScript.
 
-ENXDEC
+This took me a day, as my age varies, I am only 16.
 
 ### Feature
 
