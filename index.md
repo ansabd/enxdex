@@ -16,7 +16,7 @@ ENXDEC
 ** Usage: **
 
 `<script src='enxdec.js'></script>
-	<input id="inp" value="ansabd"> <br>
+	<input id="inp" value="ansabd"><br>
 	<button onclick="encodeThis(document.getElementById('inp').value)">Encode</button>
 	<button onclick="decodeThis(document.getElementById('inp').value)">Decode</button>
 	<br>
@@ -24,16 +24,17 @@ ENXDEC
 	<font id="dec"></font>
 	<script>
 		function encodeThis(val) {
-			document.getElementById('enc').innerHTML=encode(val);
+			document.getElementById('enc').innerHTML=xencode(val);
 		}
 		function decodeThis(val) {
 			var dec = document.getElementById('dec');
-			var ret = decode(val);
+			var ret = xdecode(val);
 			dec.innerHTML = 'Value: '+ret.value+'<br><br>';
 			dec.innerHTML += 'TOE: '+ret.time;
 		}
 
 	</script>`
+	
 ## Notice:
 **When you decode the text you will get return type, 'Object', so don't worry, it's pretty simple
 let's assume, 
