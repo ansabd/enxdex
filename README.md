@@ -3,6 +3,7 @@ encryption I have made using JavaScript. This is the v1.0 of my encryption.
 The feature I have addded to this encryption is quite simple, I have added
 TOE [Time of Encryption}, which tells you the time of encryption when you decode any 
 encoded text.
+Usage: 
 ```
 	<script src='enxdec.js'></script>
 	<input id="inp" value="ansabd"> <br>
