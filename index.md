@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+## Welcome to EnxDec
 
-You can use the [editor on GitHub](https://github.com/ansabd/enxdex/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## This is ever first encryption I have made by using my little 10g of brain, and combining it with JavaScript.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+ENXDEC
 
-# Header 1
-## Header 2
-### Header 3
+### Feature
 
-- Bulleted
-- List
+- Easy to use
+- Encryption conatains Time of Encryption
 
-1. Numbered
-2. List
+### Disadvantage
+- You can encode string conating space, but can't decode it back again
+- # I'm working on this mighty error, so for now don't encode string containing spaces, else you will get wrong decoded text;
 
-**Bold** and _Italic_ and `Code` text
+** Usage: **
 
-[Link](url) and ![Image](src)
-```
+`
+<script src='enxdec.js'></script>
+	<input id="inp" value="ansabd"> <br>
+	<button onclick="encodeThis(document.getElementById('inp').value)">Encode</button>
+	<button onclick="decodeThis(document.getElementById('inp').value)">Decode</button>
+	<br>
+	<font id="enc"></font><br><br>
+	<font id="dec"></font>
+	<script>
+		function encodeThis(val) {
+			document.getElementById('enc').innerHTML=encode(val);
+		}
+		function decodeThis(val) {
+			var dec = document.getElementById('dec');
+			var ret = decode(val);
+			dec.innerHTML = 'Value: '+ret.value+'<br><br>';
+			dec.innerHTML += 'TOE: '+ret.time;
+		}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ansabd/enxdex/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+	</script>
+  `
